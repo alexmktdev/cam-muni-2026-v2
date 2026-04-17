@@ -87,5 +87,5 @@ datos.csv
 **/exports/*.csv
 **/private/*.csv
 
-# Notas o prompts con contexto interno (descomenta si aplica a tu flujo)
-# prompt.md
+# Notas o prompts con contexto interno (no versionar)
+prompt.md
