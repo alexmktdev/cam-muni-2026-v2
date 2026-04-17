@@ -1,0 +1,13 @@
+/* Estilos globales: Tailwind CSS v4 vía capa de importación única. */
+@import 'tailwindcss';
+
+/* Escala global ~80%: la mayoría de utilidades Tailwind usan rem y heredan de aquí. */
+@layer base {
+  html {
+    font-size: 80%;
+  }
+}
+
+body {
+  @apply min-h-screen bg-slate-50 text-slate-900 antialiased;
+}

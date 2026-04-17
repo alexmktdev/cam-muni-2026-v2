@@ -1,0 +1,91 @@
+# ─── Dependencias ─────────────────────────────────────────────────────────────
+node_modules/
+.pnp
+.pnp.js
+.yarn/cache
+.yarn/unplugged
+.yarn/build-state.yml
+.yarn/install-state.gz
+
+# ─── Next.js / React (build, caché, artefactos) ───────────────────────────────
+.next/
+out/
+.vercel/
+.turbo/
+*.tsbuildinfo
+
+# ─── Build genérico ───────────────────────────────────────────────────────────
+build/
+dist/
+
+# ─── Variables de entorno y secretos (NUNCA subir) ────────────────────────────
+# Cubre .env, .env.local, .env.production, etc.
+.env
+.env.*
+!.env.example
+!.env.*.example
+!.env.sample
+!.env.*.sample
+
+# ─── Claves y credenciales (archivos sueltos habituales) ──────────────────────
+*.pem
+*.p12
+*.pfx
+*.key
+*credentials*.json
+*serviceAccount*.json
+*-firebase-adminsdk-*.json
+google-services.json
+GoogleService-Info.plist
+firebase-adminsdk*.json
+
+# Carpetas donde a veces se guardan claves exportadas
+secrets/
+credentials/
+
+# ─── Firebase / Firestore (config y reglas con lógica de acceso) ─────────────
+# Incluye reglas e índices: no exponen contraseñas pero definen el modelo de seguridad.
+.firebaserc
+firebase.json
+firestore.rules
+firestore.indexes.json
+storage.rules
+firebase.rules-test.json
+.firebase/
+firebase-debug.log
+firestore-debug.log
+ui-debug.log
+*-debug.log
+
+# ─── Testing / E2E ───────────────────────────────────────────────────────────
+test-results/
+playwright-report/
+blob-report/
+playwright/.cache/
+coverage/
+.nyc_output/
+
+# ─── Logs ─────────────────────────────────────────────────────────────────────
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# ─── IDE / editor / sistema ───────────────────────────────────────────────────
+.DS_Store
+.idea/
+.vscode/
+*.swp
+*.swo
+.cursor/
+
+# ─── Datos locales / dumps ────────────────────────────────────────────────────
+datos.csv
+**/exports/*.csv
+**/private/*.csv
+
+# Notas o prompts con contexto interno (descomenta si aplica a tu flujo)
+# prompt.md
